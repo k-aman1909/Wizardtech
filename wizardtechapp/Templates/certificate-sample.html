@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/certificate-sample.css' %}">
+   
+    <!-- ==================main==inner===part=== -->
+    <section class="sample" style="display: flex;flex-wrap: wrap;">
+        <div class="subsample" data-aos="fade-right"><img src="{% static 'img/certificate-sample.png' %}" alt=""></div>
+        <div class="subsample" data-aos="fade-left"><img src="{% static 'img/certificate-details-wizard.png' %}" alt=""></div>
+    </section>
+    <!-- ===========inner====part====end========== -->
+      <!-- ========================footer====================== -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+      <script>
+          AOS.init({
+              // Global settings:
+              offset: 120, // offset (in px) from the original trigger point
+              delay: 0, // values from 0 to 3000, with step 50ms
+              duration: 400, // values from 0 to 3000, with step 50ms
+              easing: 'ease', // default easing for AOS animations
+              once: true, // whether animation should happen only once - while scrolling down
+              anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+          })
+          var text = $('.typewriter').text();
+      
+          var length = text.length;
+          var timeOut;
+          var character = 0;
+      
+      
+          (function typeWriter() {
+              timeOut = setTimeout(function () {
+                  character++;
+                  var type = text.substring(0, character);
+                  $('.typewriter').text(type);
+                  typeWriter();
+      
+                  if (character == length) {
+                      clearTimeout(timeOut);
+                  }
+      
+              }, 5);
+          }());
+      </script>
+      {% endblock %}
+</body>
+</html>

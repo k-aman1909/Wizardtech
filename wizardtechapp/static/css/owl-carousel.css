@@ -1,0 +1,236 @@
+html{
+    font-size: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.owl-carousel {
+    display: block !important;
+    /* margin-left: 2rem;
+    margin-right: 5rem; */
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    color: #FF6600;
+    border-radius: 50%;
+}
+.subject .owl-carousel .owl-prev{
+    visibility: hidden;
+}
+.subject .owl-carousel .owl-next{
+    visibility: hidden;
+}
+.courses .owl-carousel .owl-prev {
+    top: 40%;
+    
+}
+.courses .owl-carousel .owl-next{
+    top: 40%;
+    
+}
+.activity .owl-carousel .owl-prev {
+    top: 45%;
+    left: 10px;
+    
+}
+.activity .owl-carousel .owl-next{
+    top: 45%;
+    right: 10px;
+    
+}
+.associate .owl-carousel .owl-prev {
+    top: 40%;
+    left: 10px;
+    
+}
+.associate .owl-carousel .owl-next{
+    top: 40%;
+    right: 10px;
+    
+}
+.teacher .owl-carousel .owl-prev {
+    top: 50%;
+    left: 10px;
+    
+}
+.teacher .owl-carousel .owl-next{
+    top: 50%;
+    right: 10px;
+    
+}
+.owl-prev,
+.owl-next {
+    width: 40px !important;
+    height: 40px !important;
+    position: absolute;
+    padding-top: 0.8rem !important;
+    
+    border-radius: 50% !important;
+    background-color: red;
+    /* top: 45%; */
+    background-color: transparent;
+    transform: translateY(-50%);
+    display: block !important;
+}
+
+.owl-prev {
+    left: 50px;
+   
+}
+
+.owl-next {
+    right: 50px;
+}
+
+.owl-prev i,
+.owl-next i {
+    color: blue;
+    font-size: 2.5rem;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #FF6600 !important;
+    color: #FF6600;
+}
+#testimonial{
+    padding: 50px 0 !important;
+}
+#testimonial h3 {
+    font-size: 4rem;
+    padding: 20px 20px;
+    text-align: center;
+}
+#owl-three .item{
+    padding-top: 6rem;
+    width: 80%;
+    margin: auto;
+
+    /* padding-left: 5rem;
+    padding-right: 5rem; */
+    cursor: pointer;
+}
+.testimonial-box {
+    height: 28rem;
+    /* align-items: inherit; */
+    border-radius: 4px;
+    background: url(/image/rating.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: right 20px bottom 5px !important;
+    border: solid 2px #091B61;
+    box-shadow: rgba(33, 120, 192, 0.292) 0px 0.0625em 0.0625em, rgba(50, 90, 221, 0.502) 0px 0.125em 0.5em, rgba(16, 199, 219, 0.555) 0px 0px 0px 1px inset;
+}
+
+.testimonial-box p {
+    font-size: 1.5rem;
+    padding: 0px 20px 10px 20px;
+}
+
+
+
+.testimonial-span-text {
+    margin-left: 20px;
+}
+
+#testimonial-img {
+    width: 10rem !important;
+    height: 10rem;
+    position: absolute;
+    margin-top: -4rem;
+    padding: .2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+#testimonial-img img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+}
+.testimonial-span-text h6 {
+    width: 25rem;
+    margin-left: 9rem;
+    margin-top: -15px;
+    background-color: white;
+    padding: 0px 20px;
+    font-size: 2rem;
+    /* border: solid 1px red; */
+}
+
+.testimonial-span-text p {
+    margin-left: 10rem;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    /* border: 2px solid red; */
+    color: #091B61;
+    width: 70%;
+    font-size: 1.8rem;
+}
+
+.descrp-cnt-testi {
+    padding: 35px 50px 30px 30px !important;
+    text-align: left !important;
+    /* font-size: 3rem; */
+    color: black;
+    /* height: 100%; */
+    line-height: 2rem;
+    /* border: solid 1px red; */
+}
+
+.blue-sp {
+    color: #0866FF;;
+}
+/* @media screen and (max-width:1269px){
+    html{
+        font-size: 55%;
+    }
+    .testimonial-box{
+        height: 30rem;
+    }
+}
+@media screen and (max-width:968px){
+    html{
+        font-size: 45%;
+    }
+
+} */
+.owl-carousel .item {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .owl-carousel .item {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .testimonial-box {
+        height: auto;
+        min-height: 28rem;
+        padding: 2rem;
+    }
+    
+    .testimonial-span-text {
+        margin-left: 1rem;
+    }
+    
+    .testimonial-span-text h6 {
+        width: auto;
+        max-width: 25rem;
+        margin-left: 1rem;
+    }
+    
+    .testimonial-span-text p {
+        margin-left: 1rem;
+        width: 90%;
+    }
+}
+/* @media screen and (max-width:600px){
+    .testimonial-box{
+        height:auto;
+    }
+} */

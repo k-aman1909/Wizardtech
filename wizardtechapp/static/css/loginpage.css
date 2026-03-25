@@ -1,0 +1,439 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+.loginpage {
+    position: fixed;
+    scale: 0;
+    top: 0rem;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* z-index: 999; */
+    transition: .3s;
+    /* border: 2px  solid red; */
+}
+
+.loginpage .slogin {
+    /* width: 40rem; */
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: #86A7FC;
+    box-shadow: rgba(234, 230, 39, 0.498) 0px 3px 6px, rgba(10, 0, 125, 0.477) 0px 3px 6px;
+    position: relative;
+    padding-bottom: 2rem;
+    border-radius: .3rem;
+    /* background-color:#ffffff; */
+    margin: auto;
+    margin-top: 15rem;
+}
+
+.loginpage .slogin .leftside {
+    /* border: 2px solid red; */
+    width: 40rem;
+}
+
+.loginpage .slogin .rightside {
+    width: 40rem;
+    /* border: 2px solid red; */
+}
+
+.loginpage .slogin .leftside img {
+    width: 100%;
+    height: 100%;
+}
+
+.loginpage .slogin .rightside h1 {
+    text-align: center;
+    width: 100%;
+    /* border: 2px solid red; */
+    color: rgb(20, 20, 105);
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.loginpage .slogin .rightside .log-img {
+    width: 10rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin: auto;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #29458e;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+}
+
+.loginpage .slogin .log-img i {
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+
+}
+
+/* .rightside table ,td{
+    border: 2px solid red;
+    
+    margin-bottom: 1.5rem;
+} */
+.loginpage .slogin .rightside table {
+    margin: auto;
+    width: 80%;
+    margin-top: 2rem;
+}
+
+.loginpage .slogin .rightside table td {
+    display: flex;
+    position: relative;
+    padding-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginpage .slogin .rightside table td input[type="text"] {
+    width: 100%;
+    margin: auto;
+    outline: none;
+    border-radius: 2rem;
+    background-color: #29458e;
+    padding-left: 2rem;
+    padding-right: 12rem;
+    color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 4rem;
+}
+
+.loginpage .slogin .rightside table td input[type="text"]::placeholder {
+    color: white;
+}
+
+.loginpage .slogin .rightside table td label {
+    position: absolute;
+    color: white;
+    /* left: 3rem; */
+    display: none;
+    font-size: 1.5rem;
+    /* top: -1.7rem; */
+    right: 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    background-color: none;
+
+}
+
+.loginpage .slogin .rightside table td input[type="checkbox"] {
+    outline: none;
+    border: none;
+    margin-right: 1rem;
+}
+
+.loginpage .slogin .rightside table td .remember {
+    /* border: 2px solid blue; */
+    width: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.loginpage .slogin .rightside table td span {
+    /* color: black; */
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    /* width: 100%; */
+    /* text-align: justify; */
+}
+
+.loginpage .slogin .rightside table td button {
+    background-color: rgb(14, 14, 102);
+    color: white;
+    padding: .5rem 2.5rem;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.loginpage .slogin .rightside p a {
+    color: red;
+
+    font-size: 1.3rem;
+}
+
+.loginpage .slogin .rightside p {
+    color: blue;
+    font-size: 1.5rem;
+    width: 100%;
+
+    text-align: center;
+}
+
+.loginpage .slogin .cut {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    background-color: rgb(6, 6, 102);
+    color: rgb(231, 22, 22);
+    /* border-radius: 50%; */
+}
+
+/* =========centerlogin========= */
+.center-login {
+    position: fixed;
+    scale: 0;
+    top: 0rem;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* z-index: 999; */
+    transition: .3s;
+    /* border: 2px  solid red; */
+}
+
+.center-login .slogin {
+    /* width: 40rem; */
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: rgba(70, 70, 70, 0.498) 0px 3px 6px, rgba(79, 79, 79, 0.477) 0px 3px 6px;
+    position: relative;
+    /* padding-bottom: 2rem; */
+    border-radius: .3rem;
+    /* background-color:#ffffff; */
+    margin: auto;
+    margin-top: 15rem;
+}
+
+.center-login .slogin .leftside {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    width: 40rem;
+}
+
+.center-login .slogin .rightside {
+    width: 40rem;
+    background-color: #c63745;
+    /* border: 2px solid red; */
+}
+
+.center-login .slogin .leftside img {
+    width: 100%;
+    height: 80%;
+    margin: auto;
+}
+
+.center-login .slogin .rightside h1 {
+    text-align: center;
+    width: 100%;
+    /* border: 2px solid red; */
+    color: #ffffff;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.center-login .slogin .rightside .log-img {
+    width: 10rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin: auto;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+}
+
+.center-login .slogin .log-img i {
+    font-size: 5rem;
+    color: #c63745;
+
+}
+
+/* .rightside table ,td{
+    border: 2px solid red;
+    
+    margin-bottom: 1.5rem;
+} */
+.center-login .slogin .rightside table {
+    margin: auto;
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.center-login .slogin .rightside table td {
+    display: flex;
+    position: relative;
+    padding-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-login .slogin .rightside table td input[type="text"] {
+    width: 100%;
+    margin: auto;
+    outline: none;
+    border-radius: 2rem;
+    background-color: #ffffff;
+    padding-left: 2rem;
+    padding-right: 12rem;
+    color: #c63745;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 4rem;
+}
+
+.center-login .slogin .rightside table td input[type="text"]::placeholder {
+    color: #c63745;
+}
+
+.center-login .slogin .rightside table td label {
+    position: absolute;
+    color: #c63745;
+    /* left: 3rem; */
+    display: none;
+    font-size: 1.5rem;
+    /* top: -1.7rem; */
+    right: 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    background-color: none;
+
+}
+
+.center-login .slogin .rightside table td input[type="checkbox"] {
+    outline: none;
+    border: none;
+    margin-right: 1rem;
+}
+
+.center-login .slogin .rightside table td .remember {
+    /* border: 2px solid blue; */
+    width: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.center-login .slogin .rightside table td span {
+    /* color: black; */
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    font-size: 1.5rem;
+    color: rgb(255, 250, 250);
+    /* width: 100%; */
+    /* text-align: justify; */
+}
+
+.center-login .slogin .rightside table td button {
+    background-color: #ffffff;
+    color: #c63745;
+    padding: .5rem 2.5rem;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: .5s;
+    &:hover{
+        scale: 1.2;
+    }
+}
+
+
+
+.center-login .slogin .cut-center {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    background-color: rgb(255, 255, 255);
+    color: #c63745;
+    /* border-radius: 50%; */
+}
+
+/* centerloging end============ */
+@media screen and (max-width: 998px) {
+    html {
+        font-size: 55%;
+    }
+
+    .loginpage .slogin .loginpage .slogin .rightside,
+    .leftside {
+        width: 35rem;
+    }
+
+    .loginpage .slogin .rightside table td input[type="text"] {
+
+        height: 3.5rem;
+    }
+
+    .center-login .slogin .center-login .slogin .rightside,
+    .leftside {
+        width: 35rem;
+    }
+
+    .center-login .slogin .rightside table td input[type="text"] {
+
+        height: 3.5rem;
+    }
+
+}
+
+@media screen and (max-width: 786px) {
+    html {
+        font-size: 35%;
+    }
+
+    .loginpage .slogin .rightside,
+    .leftside {
+        width: 30rem;
+    }
+
+    .center-login .slogin .rightside,
+    .leftside {
+        width: 30rem;
+    }
+}
+

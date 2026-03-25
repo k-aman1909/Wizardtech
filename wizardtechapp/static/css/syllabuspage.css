@@ -1,0 +1,528 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+.page {
+    /* pos  ition: relative; */
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+}
+
+/* =========leftside------ */
+
+.page .subpage {
+    width:68%;
+    border-radius: .3rem;
+    height: 120rem;
+    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    /* border: 2px solid blue; */
+}
+.page .subpage::-webkit-scrollbar {
+    width: 2px;
+    /* margin-right: 2rem; */
+}
+
+/* Track */
+.page .subpage::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: .5rem;
+}
+
+/* Handle */
+.page .subpage::-webkit-scrollbar-thumb {
+    background: #190684;
+    border-radius: .4rem;
+}
+
+/* Handle on hover */
+.page .subpage::-webkit-scrollbar-thumb:hover {
+    background: #08076d;
+}
+
+.page .subpage .topimg {
+    width: 80%;
+    height: 40rem;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+
+.page .subpage .topimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.page .subpage .dhead {
+    margin: auto;
+    /* border: 2px solid red; */
+    width: 80%;
+
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.page .subpage .dhead h1 {
+    text-align: center;
+    position: relative;
+    /* border: 2px solid blue; */
+    font-size: 2.5rem;
+}
+
+.page .subpage .dhead h1::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    border: none;
+    width: 15rem;
+    margin-top: .5rem;
+    background-color: rgb(20, 29, 126);
+    border-radius: 50%;
+    height: .2rem;
+
+}
+
+.page .subpage .overview {
+    width: 90%;
+
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.page .subpage .overview h1 {
+    font-size: 2.5rem;
+    color: rgb(30, 30, 131);
+}
+
+.page .subpage .overview p {
+    margin-top: 3rem;
+    text-align: justify;
+    font-size: 1.8rem;
+}
+
+.page .subpage .why,
+.what {
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    padding-top: 2rem;
+
+    padding-bottom: 2rem;
+    border-radius: .3rem;
+    margin-bottom: 2rem;
+
+    /* border: 2px solid blue; */
+    &:hover {
+        box-shadow: rgba(172, 17, 17, 0.42) 0px 3px 8px;
+    }
+}
+
+.page .subpage .why h1 {
+    font-size: 1.8rem;
+    position: relative;
+    /* margin-bottom: 2rem; */
+    /* margin-top: 5rem; */
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+.page .subpage .why .h1::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    border: none;
+    width: 7rem;
+    margin-top: .5rem;
+    /* margin-bottom: 3rem; */
+    background-color: red;
+    border-radius: 50%;
+    height: .2rem;
+
+}
+
+.page .subpage .why ul {
+    /* border: 2px solid red; */
+
+    width: 40rem;
+
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.page .subpage .why ul li {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    list-style: square;
+    /* text-align: center; */
+}
+
+.page .subpage .syllabus {
+    width: 60%;
+    /* border: 2px solid red; */
+
+    background-color: rgb(240, 244, 244);
+    margin: auto;
+    /* margin-top: 1rem; */
+    margin-bottom: .5rem;
+    transition: .5s;
+}
+
+.syllabus .chapter {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid blue; */
+    z-index: 9999;
+    border-radius: .2rem;
+    /* margin-bottom: rem; */
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.syllabus .chapter h1 {
+    font-size: 1.8rem;
+    font-weight: lighter;
+
+}
+
+.syllabus .topic {
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.syllabus .chapter i {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.syllabus .topic ul li {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    padding-left: 1rem;
+}
+
+.syllabus .topic ul li:nth-child(even) {
+    background-color: rgb(222, 221, 221);
+}
+
+.what h1 {
+    text-align: left;
+    font-size: 2.6rem;
+    padding-left: 2rem;
+}
+
+.what p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+
+/* =========leftside--ends------ */
+/* ==========rightside--satrt-------- */
+.page .subpage2 {
+    /* border: 2px solid blueviolet; */
+    width: 30%;
+    /* height: inherit; */
+}
+.subpage2 .upcoming{
+    width: 100%;
+    position: relative;
+    padding-top: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    max-height: 40rem;
+    /* display: flex; */
+    /* justify-content: center; */
+    overflow:hidden;
+    margin-bottom: 5rem;
+    border-radius: .3rem;
+    transition: .5s;
+    /* border: 2px solid red; */
+}
+.arrow button {
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    width: 4rem;
+    margin: auto;
+    /* top: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0rem;
+    /* z-index: 999; */
+    height: 4rem;
+    /* padding-top: .8rem; */
+    border: none;
+    background-color: #92C7CF;
+    cursor: pointer;
+    left: 45%;
+    border-radius: 50%;
+
+    transition: .1s;
+
+    &:hover {
+        background-color: black;
+        color: #92C7CF;
+        scale: 1.05;
+    }
+}
+.subpage2 .upcoming .upcoming-batch{
+    border: 3px solid rgb(62, 170, 216);
+    width: 90%;
+    border-left: none;
+    border-right: none;
+    
+    padding: 1rem;
+    display: flex;
+    /* height: 10rem; */
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.subpage2 .upcoming .upcoming-batch .upcomingimg{
+    width: 40%;
+    
+    /* height: auto; */
+}
+.upcoming-batch .upcomingimg img{
+    width: 100%;
+    height: 100%;
+}
+.subpage2 .upcoming .upcoming-batch .upcoming-detail{
+    width: 60%;
+    /* border: 2px solid red; */
+}
+.subpage2 .upcoming .upcoming-batch .upcoming-detail h4{
+    text-align: left;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    /* border: 2px solid yellow; */
+}
+.subpage2 .upcoming .upcoming-batch .upcoming-detail span ,p{
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 100%;
+}
+.subpage2 .upcoming .upcoming-batch .upcoming-detail p{
+    margin-top: .5rem;
+    font-weight: 500;
+}
+.subpage2 .upcoming .upcoming-batch .upcoming-detail button{
+    background-color: #08076d;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+.subpage2 .suggest-course {
+    /* border: 3px solid brown; */
+    border-radius: .3rem;
+    height: 75rem;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    display: flex;
+    /* overflow: scroll; */
+    overflow-y: scroll;
+    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+.title {
+    font-size: 2rem;
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.subpage2 .suggest-course .suggested {
+    /* border: 2px solid red; */
+    width: 100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    display: flex;
+    border-radius: .2rem;
+    cursor: pointer;
+    height: 12rem;
+
+    &:hover {
+        box-shadow: rgba(42, 146, 225, 0.3) 0px 1px 2px 0px, rgba(73, 168, 240, 0.345) 0px 1px 3px 1px;
+        scale: 1.03;
+    }
+}
+
+.subpage2 .suggest-course .suggested .suggest-img {
+    width: 35%;
+    
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    /* padding: 2rem; */
+    display: flex;
+    /* border: 2px solid red; */
+    height: 100%;
+}
+
+.suggested .suggest-img img {
+    width: 100%;
+    
+    height: 100%;
+    /* aspect-ratio:  16/9; */
+    /* border: 2px solid red; */
+    justify-content: center;
+    margin: auto;
+    /* height: 100%; */
+    /* height: 100%; */
+}
+
+.subpage2 .suggest-course .suggested .suggest-detail {
+    /* border: 2px solid rgb(255, 139, 139); */
+    width: 65%;
+    position: relative;
+    padding: 1rem;
+}
+
+.suggested .suggest-detail h1 {
+    font-size: 1.2rem;
+}
+
+.suggested .suggest-detail button {
+    border: none;
+    background-color: rgb(12, 12, 103);
+    color: white;
+    /* padding: 1rem 2rem; */
+    bottom: 2rem;
+    width: 40%;
+    height: 20%;
+    cursor: pointer;
+    border-radius: .2rem;
+    position: absolute;
+    right: 4rem;
+}
+
+.subpage2 .suggest-course::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+.subpage2 .suggest-course::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: .5rem;
+}
+
+/* Handle */
+.subpage2 .suggest-course::-webkit-scrollbar-thumb {
+    background: #190684;
+    border-radius: .4rem;
+}
+
+/* Handle on hover */
+.subpage2 .suggest-course::-webkit-scrollbar-thumb:hover {
+    background: #08076d;
+}
+
+.subpage2 .upcoming::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+.subpage2 .upcoming::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: .5rem;
+}
+
+/* Handle */
+.subpage2 .upcoming::-webkit-scrollbar-thumb {
+    background: #190684;
+    border-radius: .4rem;
+}
+
+/* Handle on hover */
+.subpage2 .upcoming::-webkit-scrollbar-thumb:hover {
+    background: #08076d;
+}
+
+@media screen and (max-width: 1109px) {
+    .subpage2 .upcoming .upcoming-batch .upcoming-detail h4 {
+        font-size: 1.8rem;
+    }
+    .subpage2 .upcoming .upcoming-batch .upcoming-detail span,
+    .subpage2 .upcoming .upcoming-batch .upcoming-detail p {
+        font-size: 1.4rem;
+    }
+    .subpage2 .upcoming .upcoming-batch .upcoming-detail button {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+    }
+    .subpage2 .suggest-course .suggested {
+        height: auto;
+        min-height: 9rem;
+        padding: 2rem 0;
+    }
+    .subpage2 .suggest-course .suggested button {
+        width: auto;
+        min-width: 60%;
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .page .subpage .dhead h1,
+    .page .subpage .overview h1 {
+        font-size: 2.4rem;
+    }
+    .page .subpage .overview p {
+        font-size: 1.6rem;
+    }
+    .page .subpage .syllabus {
+        width: 90%;
+    }
+    .what h1 {
+        font-size: 2.4rem;
+    }
+    .what p {
+        font-size: 1.4rem;
+    }
+    .subpage2 .suggest-course .suggested .suggest-detail h1 {
+        font-size: 1.6rem;
+    }
+    .subpage2 .suggest-course .suggested .suggest-detail button {
+        width: auto;
+        min-width: 50%;
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+    }
+}
+
+/* @media screen and (max-width: 786px){
+    html{
+        font-size: 35%;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    html{
+        font-size: 25%;
+    }
+} */

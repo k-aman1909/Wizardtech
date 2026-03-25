@@ -1,0 +1,1521 @@
+    {% extends "base.html" %}
+    {% load static %}
+    {% block extracss %}
+    <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/wizard.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% endblock extracss %}
+    {% block content %}
+    <div class="imgslide">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="{% static 'img/pc.jpg' %}" alt="">
+                <div class="wizard">
+                    <div>
+                        <h1>W<span style="color: red;">i</span>zard <span style="color: red;">T</span>ech Com<span
+                                style="color: red;">p</span>uter Aca<span style="color: red;">d</span>emy</h1>
+                        <button> View Courses</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'img/pc3.jpg' %}" alt="">
+                <div class="wizard">
+                    <div>
+                        <h1>W<span style="color: red;">i</span>zard <span style="color: red;">T</span>ech Com<span
+                                style="color: red;">p</span>uter Aca<span style="color: red;">d</span>emy</h1>
+                        <button> View Courses</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'img/pc1.jpg' %}" alt="">
+                <div class="wizard">
+                    <div>
+                        <h1>W<span style="color: red;">i</span>zard <span style="color: red;">T</span>ech Com<span
+                                style="color: red;">p</span>uter Aca<span style="color: red;">d</span>emy</h1>
+                        <button> View Courses</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'img/pc2.jpg' %}" alt="">
+                <div class="wizard">
+                    <div>
+                        <h1>W<span style="color: red;">i</span>zard <span style="color: red;">T</span>ech Com<span
+                                style="color: red;">p</span>uter Aca<span style="color: red;">d</span>emy</h1>
+                        <button> View Courses</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'img/pc3.jpg' %}" alt="">
+                <div class="wizard">
+                    <div>
+                        <h1>W<span style="color: red;">i</span>zard <span style="color: red;">T</span>ech Com<span
+                                style="color: red;">p</span>uter Aca<span style="color: red;">d</span>emy</h1>
+                        <button> View Courses</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="facility">
+        <div class="subfacility" data-aos="fade-up">
+            <div class="img"><i class="fa-solid fa-address-card"></i></div>
+            <div class=" text">
+                <p>Online Admission</p>
+            </div>
+        </div>
+        <div class="subfacility" data-aos="fade-up">
+            <div class="img"><i class="fa-solid fa-book-open-reader"></i></div>
+            <div class=" text">
+                <p>Course Book</p>
+            </div>
+        </div>
+        <div class="subfacility" data-aos="fade-up">
+            <div class="img"><i class="fa-solid fa-person-chalkboard"></i></div>
+            <div class=" text">
+                <p>Qualified Faculty</p>                                
+            </div>
+        </div>
+        <div class="subfacility" data-aos="fade-up">
+            <div class="img"><i class="fa-solid fa-laptop-file"></i></div>
+            <div class=" text">
+                <p>Online Exams</p> 
+            </div>
+
+        </div>
+        <div class="subfacility" data-aos="fade-up">
+            <div class="img"><i class="fa-solid fa-handshake-simple"></i></div>
+            <div class=" text">
+                <p>Placement Guarantee</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="dhead" data-aos="fade-up">
+        <h1>OUR <span style="color: red;">COURSES</span></h1>
+
+    </div>
+    <div class="subject" data-aos="fade-up">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="sub-img"><img src="{% static 'img/dca-logo.jpg' %}" alt="">
+                    <div class="abt-sub">
+                        <h1>Diploma in computer Applications</h1><br><a href="{% url 'syllabuspage'%}"><button>Read
+                                more</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="sub-img"><img src="{% static 'img/adca-final.png' %}" alt="">
+                    <div class="abt-sub">
+                        <h1>Advance Diploma in computer Applications</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                                more</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="sub-img"><img
+                        src="{% static 'img/dtp-letter-logo-design-on-black-backgrounddtp-vector-41791968-removebg-preview.png' %}"
+                        alt="">
+                    <div class="abt-sub">
+                        <h1>Desktop Publishing</h1><a href="{% url 'syllabuspage'%}"><button>Read more</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="sub-img"><img src="{% static 'img/tally.png' %}" alt="">
+                    <div class="abt-sub">
+                        <h1>Transactions Allowed in a Linear Line Yard</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                                more</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="sub-img"><img src="{% static 'img/images__1_-removebg-preview.png' %}" alt="">
+                    <div class="abt-sub">
+                        <h1>Advanced Diploma in International Taxation</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                                more</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="sub-img"><img src="{% static 'img/adhn-logo.jpeg' %}" alt="">
+                    <div class="abt-sub">
+                        <h1>Advance Diploma in Hardware & Networking</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                                more</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="sub-img"><img src="{% static 'img/hdit.png' %}" alt="">
+
+                    <div class="abt-sub">
+                        <h1>Honours Diploma in Information Technology</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                                more</button></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="sub-img"><img src="{% static 'img/images-removebg-preview.png' %}" alt="">
+                    <div class="abt-sub">
+                        <h1>Diploma in Office Automation</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                                more</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" subject1">
+        
+        <div class="sub-subject">
+            <div class="sub-img"><img src="{% static 'img/dca-logo.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Diploma in computer Applications</h1><br><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img src="{% static 'img/adca-final.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Advance Diploma in computer Applications</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="sub-subject">
+            <div class="sub-img"><img
+                    src="{% static 'img/dtp-letter-logo-design-on-black-backgrounddtp-vector-41791968-removebg-preview.png' %}"
+                    alt="">
+                <div class="abt-sub">
+                    <h1>Desktop Publishing</h1><a href="{% url 'syllabuspage'%}"><button>Read more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img src="{% static 'img/tally.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Transactions Allowed in a Linear Line Yard</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img src="{% static 'img/images__1_-removebg-preview.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Advanced Diploma in International Taxation</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img src="{% static 'img/adhn-logo.jpeg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Advance Diploma in Hardware & Networking</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img src="{% static 'img/hdit.png' %}" alt="">
+
+                <div class="abt-sub">
+                    <h1>Honours Diploma in Information Technology</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sub-subject">
+            <div class="sub-img"><img class='s-low' src="{% static 'img/dctt-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Diploma in Computer Teacher Training</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/ADCP.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Advance Diploma In Computer Programming </h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='s-low' src="{% static 'img/admg-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Airborne Data Management Group</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='s-low' src="{% static 'img/dcs-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Distributed Control System</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/adw-logo.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>DAdVANCE DIPLOMA IN WEB DESIGNING</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/dit-logo.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Diploma in Information Technology</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/dht-logo.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Diploma In Hardware Technology</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/dhn-logo.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Diploma in Hardware and Networking</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='s-low' src="{% static 'img/cfap-logo.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>CERTIFICATE IN Financial ACCOUNTING & PublicATION</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/dcp-logo.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Diploma in Computer Programming</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/dwd-logo.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Diploma in Web-Design</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/ddtp.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Diploma in DeskTop Publishing</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/dmg-logo.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Diploma in Digital Media & Graphics </h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/dwd.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Diploma in Web Development</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/dfa-logo.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Diploma in Financial Accounting </h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/deo-logo.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Data Entry Operator</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='s-low' src="{% static 'img/cfa.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>CERTIFICATE IN Financial ACCOUNTING</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/bcc-logo.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Basic Computer Courses</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/ccc-logo.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Course on Computer Certificates</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/aefa-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Advance Excel in Finance Accounting</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/cde-logo.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Certified DevOps Engineer</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/cca-logo.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Certificate in Computer Applications</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='s-low' src="{% static 'img/ae-logo.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Advance Excel</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/ccap-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Certification in Computer Application & Programming </h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='l-height' src="{% static 'img/msword-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Microsoft Word</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='l-height' src="{% static 'img/msexcel-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Microsoft Excel</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='l-height' src="{% static 'img/mspowerpoint-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Microsoft PowerPoint</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='s-low' src="{% static 'img/msaccess-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Microsoft Access</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/html-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>HTML</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/dhtml.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>DHTML</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/PAGEMAKER.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Pagemaker</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='l-height' src="{% static 'img/photoshop-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Photoshop</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='s-low' src="{% static 'img/c-pro-lan.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>C Programming</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='s-low' src="{% static 'img/c-pro.jpg' %}" alt="">
+                <div class="abt-sub">
+                    <h1>C++</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='l-height' src="{% static 'img/java-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Java</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='s-low' src="{% static 'img/oracle-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Oracle</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='s-low' src="{% static 'img/visual-basic-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Visual Basic</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='s-low' src="{% static 'img/xml-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>XML</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='s-low' src="{% static 'img/asp-net-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Asp.net</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-subject">
+            <div class="sub-img"><img class='' src="{% static 'img/autocad-logo.png' %}" alt="">
+                <div class="abt-sub">
+                    <h1>Autocad</h1><a href="{% url 'syllabuspage'%}"><button>Read
+                            more</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arrow"> <button id="more"><i class="fa-solid fa-angle-down"></i> <i class="fa-solid fa-angle-up"
+                style="display: none;"></i></button></div>
+
+    <div class="dhead">
+        <h1>UPCOMING <span style="color: red;">BATCHES</span></h1>
+
+    </div>
+    <div class="courses">
+        <div class="owl-carousel owl-theme">
+            <div class="item" data-aos="fade-up">
+                <div class="offer"><img src="{% static 'img/Blue And Yellow Modern Cyber Monday Sale Instagram Post.png' %}"
+                        alt=""><span>Upto <br>50% Off</span></div>
+                <div><img src="{% static 'img/DCA.jpg' %}" alt=""></div>
+                <div class="offermain">
+
+                    <div class="price"><span><strike><i class="fa-solid fa-indian-rupee-sign"></i>
+                                700</strike> &nbsp;<i class="fa-solid fa-indian-rupee-sign"></i>350</span>
+                        <button>Enroll
+                            Now</button>
+                    </div>
+                    <h1>Diploma in Computer Application</h1>
+                    <div class="trainner">
+                        <div class="trainerimg"><img src="{% static 'img/boy.jpeg' %}" alt=""></div>
+                        <span>Aman Sharma</span>
+                    </div>
+                    <div class="cdetail">
+                        <div class="subcdetail"><span>Course Time</span> <br> <br> <span>1 Year</span></div>
+                        <div class="subcdetail"><span>Mode</span> <br> <br> <span>Online/Offline</span></div>
+                        <div class="subcdetail" style="border: none;"><span>Time</span> <br> <br> <span>7:00 -
+                                11:00</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-aos="fade-up">
+                <div class="offer"><img src="{% static 'img/Blue And Yellow Modern Cyber Monday Sale Instagram Post.png' %}"
+                        alt=""><span>Upto <br>50% Off</span></div>
+                <div><img src="{% static 'img/adca1.jpg' %}" alt=""></div>
+                <div class="offermain">
+
+                    <div class="price"><span><strike><i class="fa-solid fa-indian-rupee-sign"></i>
+                                700</strike>&nbsp; <i class="fa-solid fa-indian-rupee-sign"></i>350</span>
+                        <button>Enroll
+                            Now</button>
+                    </div>
+                    <h1>Advance Diploma in Computer Application</h1>
+                    <div class="trainner">
+                        <div class="trainerimg"><img src="{% static 'img/boy.jpeg' %}" alt=""></div>
+                        <span>Aman Sharma</span>
+                    </div>
+                    <div class="cdetail">
+                        <div class="subcdetail"><span>Course Time</span> <br> <br> <span>1 Year</span></div>
+                        <div class="subcdetail"><span>Mode</span> <br> <br> <span>Online/Offline</span></div>
+                        <div class="subcdetail" style="border: none;"><span>Time</span> <br> <br> <span>7:00 -
+                                11:00</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" data-aos="fade-up">
+                <div class="offer"><img src="{% static 'img/Blue And Yellow Modern Cyber Monday Sale Instagram Post.png' %}"
+                        alt=""><span>Upto <br>50% Off</span></div>
+                <div><img src="{% static 'img/tally.webp' %}" alt=""></div>
+                <div class="offermain">
+
+                    <div class="price"><span><strike><i class="fa-solid fa-indian-rupee-sign"></i>
+                                700</strike>&nbsp; <i class="fa-solid fa-indian-rupee-sign"></i>350</span>
+                        <button>Enroll
+                            Now</button>
+                    </div>
+                    <h1>Tally</h1>
+                    <div class="trainner">
+                        <div class="trainerimg"><img src="{% static 'img/boy.jpeg' %}" alt=""></div>
+                        <span>Aman Sharma</span>
+                    </div>
+                    <div class="cdetail">
+                        <div class="subcdetail"><span>Course Time</span> <br> <br> <span>1 Year</span></div>
+                        <div class="subcdetail"><span>Mode</span> <br> <br> <span>Online/Offline</span></div>
+                        <div class="subcdetail" style="border: none;"><span>Time</span> <br> <br> <span>7:00 -
+                                11:00</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" data-aos="fade-up">
+                <div class="offer"><img src="{% static 'img/Blue And Yellow Modern Cyber Monday Sale Instagram Post.png' %}"
+                        alt=""><span>Upto <br>50% Off</span></div>
+                <div><img src="{% static 'img/dtp1.png' %}" alt=""></div>
+                <div class="offermain">
+
+                    <div class="price"><span><strike><i class="fa-solid fa-indian-rupee-sign"></i>
+                                700</strike> &nbsp;<i class="fa-solid fa-indian-rupee-sign"></i>350</span>
+                        <button>Enroll
+                            Now</button>
+                    </div>
+                    <h1>Desktop Publishing</h1>
+                    <div class="trainner">
+                        <div class="trainerimg"><img src="{% static 'img/boy.jpeg' %}" alt=""></div>
+                        <span>Aman Sharma</span>
+                    </div>
+                    <div class="cdetail">
+                        <div class="subcdetail"><span>Course Time</span> <br> <br> <span>1 Year</span></div>
+                        <div class="subcdetail"><span>Mode</span> <br> <br> <span>Online/Offline</span></div>
+                        <div class="subcdetail" style="border: none;"><span>Time</span> <br> <br> <span>7:00 -
+                                11:00</span></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="reg">
+        <div class="fade">
+            <div class="subreg">
+
+                <div class="detail" id="counter"><i class="fa-solid fa-users" data-aos="fade-up"></i>
+                    <div class="p" data-aos="fade-up"> <span class="counter-value" data-count="2500">0</span>
+                        <span>Students</span>
+                    </div>
+                </div>
+                <div class="detail" id="counter"><i class="fa-solid fa-building-columns" data-aos="fade-up"></i>
+                    <div class="p" data-aos="fade-up"> <span class="counter-value" data-count="1000">0</span>
+                        <span>Institute</span>
+                    </div>
+                </div>
+                <div class="detail" id="counter"><i class="fa-solid fa-location-dot" data-aos="fade-up"></i>
+                    <div class="p" data-aos="fade-up"> <span class="counter-value" data-count="6000">0</span>
+                        <span>District</span>
+                    </div>
+                </div>
+                <div class="detail" id="counter"><i class="fa-solid fa-map-location-dot" data-aos="fade-up"></i>
+                    <div class="p" data-aos="fade-up"> <span class="counter-value" data-count="20"
+                            data-count-duration="8000">0</span> <span>State</span></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="dhead" data-aos="fade-up">
+        <h1>OUR <span style="color: red;">ACTIVITIES </span></h1>
+
+    </div>
+    <div class="activity" data-aos="fade-up">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="{% static 'img/activity.jpeg' %}" alt="">
+            </div>
+            <div class="item">
+                <img src="{% static 'img/activity1.jpeg' %}" alt="">
+            </div>
+            <div class="item">
+                <img src="{% static 'img/activity10.jpg' %}" alt="">
+            </div>
+            <div class="item">
+                <img src="{% static 'img/activity11.jpg' %}" alt="">
+            </div>
+            <div class="item">
+                <img src="{% static 'img/activity14.jpg' %}" alt="">
+            </div>
+            <div class="item">
+                <img src="{% static 'img/activity2.jpeg' %}" alt="">
+            </div>
+            <div class="item">
+                <img src="{% static 'img/activtiy13.jpg' %}" alt="">
+            </div>
+            <div class="item">
+                <img src="{% static 'img/activity4.jpeg' %}" alt="">
+            </div>
+            <div class="item">
+                <img src="{% static 'img/activity5.jpeg' %}" alt="">
+            </div>
+            <div class="item">
+                <img src="{% static 'img/activity7.jpeg' %}" alt="">
+            </div>
+            <div class="item">
+                <img src="{% static 'img/activity9.jpg' %}" alt="">
+            </div>
+            <div class="item">
+                <img src="{% static 'img/activity8.jpeg' %}" alt="">
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="dhead" data-aos="fade-up">
+        <h1>OUR <span style="color: red;"> STUDY CENTERS</span></h1>
+
+    </div>
+    <div class="associate" data-aos="fade-up">
+        <div class="owl-carousel owl-theme" >
+            <div class="item" >
+                <div class="card">
+                    <img src="{% static 'img/activity10.jpg' %}" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Centre Name</b></h4>
+                        <h1><b> Aman Kumar</b></h1>
+                        <p>Patna , Bihar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="{% static 'img/activity11.jpg' %}" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Centre Name</b></h4>
+                        <h1><b> Aman Kumar</b></h1>
+                        <p>Patna , Bihar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="{% static 'img/activity14.jpg' %}" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Centre Name</b></h4>
+                        <h1><b> Aman Kumar</b></h1>
+                        <p>Patna , Bihar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="{% static 'img/activity10.jpg' %}" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Centre Name</b></h4>
+                        <h1><b> Aman Kumar</b></h1>
+                        <p>Patna , Bihar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="{% static 'img/activity10.jpg' %}" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Centre Name</b></h4>
+                        <h1><b> Aman Kumar</b></h1>
+                        <p>Patna , Bihar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="{% static 'img/activity11.jpg' %}" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Centre Name</b></h4>
+                        <h1><b> Aman Kumar</b></h1>
+                        <p>Patna , Bihar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="{% static 'img/activity14.jpg' %}" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Centre Name</b></h4>
+                        <h1><b> Aman Kumar</b></h1>
+                        <p>Patna , Bihar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="{% static 'img/activity10.jpg' %}" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Centre Name</b></h4>
+                        <h1><b> Aman Kumar</b></h1>
+                        <p>Patna , Bihar</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="dhead" data-aos="fade-up">
+        <h1>OUR <span style="color: red;">TEACHERS</span></h1>
+
+    </div>
+    <div class="teacher" data-aos="fade-up">
+        <section id="testimonial">
+            <div class="container">
+
+                <div id="owl-three" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="testimonial-box">
+                            <div class="testimonial-span-text">
+                                <img src="{% static 'img/activity10.jpg' %}" id="testimonial-img">
+                                <h6>Vivek kumar</h6>
+                                <p><b>BCA TEACHER</b></p>
+                            </div>
+                            <br>
+                            <p class="descrp-cnt-testi">We would like to take a moment and extend our gratitude to
+                                team
+                                RAYS
+                                for creating such a user friendly web application for our organization. Everything
+                                is
+                                very
+                                smooth and just clicks away. You people are very professional at your client
+                                management
+                                skills which is another best thing you provide. Looking forward for the same kind of
+                                cordial
+                                relations in the future too.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-box">
+                            <div class="testimonial-span-text">
+                                <img src="{% static 'img/activity10.jpg' %}" id="testimonial-img"
+                                    alt="Ankita Gupta MCA Student">
+                                <h6>Sanjay Chakrabarty</h6>
+                                <p><b>BCA TEACHER</b></p>
+                            </div>
+                            <br>
+                            <p class="descrp-cnt-testi">We are very thankful to team Rays for having tailored such a
+                                master
+                                class web application. This has drastically changed our working style all together.
+                                Everything seems to be just a click away. You people are exceptionally good at
+                                client
+                                management. Thanks a lot for all your support.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-box">
+                            <div class="testimonial-span-text">
+                                <img src="{% static 'img/activity10.jpg' %}" alt="Rahul Kumar MBA Student"
+                                    id="testimonial-img">
+                                <h6>Kunal Singh</h6>
+                                <p><b>BCA TEACHER</b></p>
+                            </div>
+                            <br>
+                            <p class="descrp-cnt-testi">You people are blessed with awesome quality client
+                                management.
+                                We
+                                are very happy to use the application you tailor stitched for us. Wishing you a
+                                great
+                                future
+                                ahead team RAYS. Thanks a lot for everything. Keep supporting.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-box">
+                            <div class="testimonial-span-text">
+                                <img src="{% static 'img/activity10.jpg' %}" alt="Ankita Gupta MCA Student"
+                                    id="testimonial-img">
+                                <h6>Anuj Kumar Jha</h6>
+                                <p><b>BCA TEACHER</b></p>
+                            </div>
+                            <br>
+                            <p class="descrp-cnt-testi">Our team is extremely delighted to thank team RAYS for
+                                designing
+                                such a wonderful and user friendly web application. It has reduced our manual
+                                intervention
+                                to almost zero. We look forward to keep this wonderful association till our
+                                existence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="cmnt" data-aos="fade-up">
+        <div class="subcmnt" data-aos="fade-up">
+            <h1>What People Say <span style="color: red;"> About </span>Us...!</h1>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="cmntimg"><img src="{% static 'img/boy.jpeg' %}" alt=""></div>
+                    <div class="cmnts">
+
+
+                        <div class="left">"</div>
+                        <div class="right">"</div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, eligendi laborum
+                            obcaecati mollitia tenetur voluptatum qui corrupti deleniti molestiae animi cupiditate
+                            reiciendis quae autem laudantium reprehenderit adipisci ab dolorum vel.</p>
+                        <h1>:-Aman Sharma</h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="cmntimg"><img src="{% static 'img/boy.jpeg' %}" alt=""></div>
+                    <div class="cmnts">
+
+                        <div class="left">"</div>
+                        <div class="right">"</div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, eligendi laborum
+                            obcaecati mollitia tenetur voluptatum qui corrupti deleniti molestiae animi cupiditate
+                            reiciendis quae autem laudantium reprehenderit adipisci ab dolorum vel.</p>
+                        <h1>:-Aman Sharma</h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="cmntimg"><img src="{% static 'img/boy.jpeg' %}" alt=""></div>
+                    <div class="cmnts">
+
+                        <div class="left">"</div>
+                        <div class="right">"</div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, eligendi laborum
+                            obcaecati mollitia tenetur voluptatum qui corrupti deleniti molestiae animi cupiditate
+                            reiciendis quae autem laudantium reprehenderit adipisci ab dolorum vel.</p>
+                        <h1>:-Aman Sharma</h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="cmntimg"><img src="{% static 'img/boy.jpeg' %}" alt=""></div>
+                    <div class="cmnts">
+
+                        <div class="left">"</div>
+                        <div class="right">"</div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, eligendi laborum
+                            obcaecati mollitia tenetur voluptatum qui corrupti deleniti molestiae animi cupiditate
+                            reiciendis quae autem laudantium reprehenderit adipisci ab dolorum vel.</p>
+                        <h1>:-Aman Sharma</h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="dhead" data-aos="fade-up">
+        <h1>Contact <span style="color: red;">Us!</span></h1>
+
+    </div>
+    <div class="contact" data-aos="fade-up">
+        <div class="subcontact1">
+
+            <table class="contact-us">
+                <tr>
+                    <td>
+                        <h1>We Can't solve your problems if you don,t tell us about it!</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="" class="l1">Name</label><input type="text" class="b" id="b"> <span></span></td>
+                </tr>
+                <tr>
+                    <td><label for="" class="l1">Email</label><input type="text" class="b"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="" class="l1">Subject</label><input type="text" id="subject" class="b">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="" class="l1">Message</label><textarea name="" id="textarea"
+                            class="b"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <button>Send Message</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="subcontact2">
+            <div class="subadress">
+                <h3>Contact Us</h3>
+                <div class="adrs">
+                    <div class="for-icons" style="font-size: 2.5rem;padding: .5rem;"><i class="fa-solid fa-registered"></i>
+                    </div>
+                    <h6>REGISTERED OFFICE</h6>
+                    <p>7A/73,S/F
+                        Plot No.3 & 4, Pvt Office 204
+                        Main Road Guru Nanak Pura, Delhi -110092</p><br>
+
+                    <div class="cont-info">
+                        <p><i class="fa-solid fa-phone"></i> &nbsp;+91 9386087029 </p>
+                        <p><i class="fa-solid fa-paper-plane"></i> &nbsp; info@wtca.edu.in</p>
+                    </div>
+                </div>
+                <div class="adrs">
+                    <div class="for-icons"><i class="fa-solid fa-map-location"></i></div>
+                    <h6>CORPORATE OFFICE</h6>
+                    <p>Salempur, Lah Bazar, Chapra - 841301</p><br>
+                    <div class="cont-info">
+                        <p><i class="fa-solid fa-phone"></i> &nbsp; +91 9572095268</p>
+                        <p><i class="fa-solid fa-paper-plane"></i> &nbsp; info@wtca.edu.in</p>
+                    </div>
+
+                </div>
+                <div class="adrs">
+                    <div class="for-icons"><i class="fa-solid fa-location-dot"></i></div>
+                    <h6>REGIONAL OFFICE</h6>
+                    <p>3rd Floor, Pal Bhawan, Opp. Pillar No. 4,
+                        Bailey Road Patna-800014</p><br>
+                    <div class="cont-info">
+                        <p><i class="fa-solid fa-phone"></i> &nbsp; +91 9572095268</p>
+                        <p><i class="fa-solid fa-paper-plane"></i> &nbsp; info@wtca.edu.in</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ===================Login==popup=================== -->
+
+    <!-- ===================Login==popup===End================ -->
+    <!-- ========================footer====================== -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script>
+        // --------counter--------
+        var a = 0;
+        $(window).scroll(function () {
+
+            var oTop = $('#counter').offset().top - window.innerHeight;
+            if (a == 0 && $(window).scrollTop() > oTop) {
+                $('.counter-value').each(function () {
+                    var $this = $(this),
+                        countTo = $this.attr('data-count');
+                    $({
+                        countNum: $this.text()
+                    }).animate({
+                        countNum: countTo
+                    },
+
+                        {
+
+                            duration: 2000,
+                            easing: 'swing',
+                            step: function () {
+                                $this.text(Math.floor(this.countNum));
+                            },
+                            complete: function () {
+                                $this.text(this.countNum);
+                                //alert('finished');
+                            }
+
+                        });
+                });
+                a = 1;
+            }
+
+        });
+
+        $(function () {
+            $('.student-login').click(function () {
+                $('.loginpage').css({ 'scale': '1' })
+            })
+            $('.cut').click(function () {
+                $('.loginpage').css({ 'scale': '0' })
+            })
+        });
+        $(function () {
+            $('#center-login').click(function () {
+                $('.center-login').css({ 'scale': '1' })
+            })
+            $('.cut-center').click(function () {
+                $('.center-login').css({ 'scale': '0' })
+            })
+        })
+        $(document).ready(function () {
+            $('.l1').click(function () {
+                $(this).css({ 'top': '-1.5rem' })
+            })
+        });
+        $(function () {
+            $('.b').focusout(function () {
+                l = $('.b').val().length;
+
+                if (l < 1) {
+                    $(this).siblings('label').css({ 'top': '1.2rem', 'left': '10rem' })
+                }
+            })
+        });
+        $(function () {
+            $('.b').focusin(function () {
+                $(this).siblings('label').css({ 'top': '-1.5rem', 'left': '12rem' })
+            })
+        });
+
+
+        $(function () {
+            $('#b').on('keypress', function (e) {
+
+                if (!(e.which >= 97 && e.which <= 123 || e.which == 32 || e.which >= 65 && e.which <= 90)) {
+                    $(this).css('border', '2px solid red')
+                    $(this).siblings('span').text('Only letters allowed');
+                    $(this).siblings('span').css({ 'color': 'red' });
+                    // $(this).siblings('label').css({ 'top': '1.2rem' })
+                    return false;
+
+                }
+                else {
+                    $(this).css('border', 'none')
+                    // $(this).siblings('label').css({ 'top': '-1.5rem' })
+                    $(this).siblings('span').text('');
+                }
+
+
+            })
+        });
+
+        $(function () {
+            $('.b').keypress(function () {
+                $(this).siblings('label').css({ 'top': '-1.5rem' })
+                // $('.r1').css('display','block');
+            })
+        })
+        $('.b').keydown(function () {
+            let t = $(this).val();
+            if (t.length == 1) {
+                $(this).siblings('label').css({ 'top': '1.2rem', 'left': '10rem' })
+            }
+        })
+
+
+
+
+
+        $(function () {
+            $('.b').on('keypress', function (e) {
+                if (e.which == 32)
+                    if (e.target.selectionStart === 0)
+                        return false;
+                    else if ($(this).val().slice(-1) === ' ')
+                        e.preventDefault();
+            })
+        });
+        $(document).ready(function () {
+            var a = 0;
+            $('.bar1').click(function () {
+                if (a == 0) {
+                    $('.sidediv').css({ 'left': '0' })
+                    a = 1;
+                }
+                else if (a == 1) {
+                    $('.sidediv').css({ 'left': '-20rem' })
+                    a = 0;
+                }
+                $('.sidediv').mouseleave(function () {
+                    $('.sidediv').css({ 'left': '-20rem' })
+                    a = 0;
+                })
+
+            });
+
+        });
+        AOS.init({
+            // Global settings:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 500, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        })
+
+        $(document).ready(function () {
+            $('.imgslide .owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplayHoverPause: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                nav: false,
+                animateOut: 'fadeOut',
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+            $(function () {
+                $('.login-input').keypress(function () {
+                    $(this).siblings('label').css('display', 'block')
+                    // $('.r1').css('display','block');
+                })
+            })
+            $('.login-input').keydown(function () {
+                let t = $(this).val();
+                if (t.length == 1) {
+                    $(this).siblings('label').css('display', 'none')
+                }
+            })
+            $('.courses .owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                nav: true,
+                navText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    650: {
+                        items: 1
+                    },
+                    700: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    798: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+
+                }
+
+
+            });
+            $('.courses .owl-carousel').on('mouseover', function (e) {
+                $('.owl-carousel').trigger('stop.owl.autoplay');
+            })
+            $('.courses .owl-carousel').on('mouseleave', function (e) {
+                $('.owl-carousel').trigger('play.owl.autoplay');
+            })
+            $('.teacher .owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplayHoverPause: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                nav: true,
+                navText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+
+
+                    800: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 2
+                    }
+                }
+            })
+
+
+
+
+            $('.subcmnt .owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                // autoplayHoverPause: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                nav: false,
+
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 2
+                    }
+                }
+            })
+            $('#more').click(function (e) {
+                if ($('.fa-angle-down').css('display') == 'none') {
+                    $('.subject1').css({ 'height': '0' });
+                    $('.fa-angle-down').css('display', 'block');
+                    $('.subject').css({ 'display': 'flex' });
+                    $('.fa-angle-up').css('display', 'none');
+                    $(' .subject .owl-carousel').trigger('play.owl.autoplay');
+
+                }
+                else {
+                    $('.subject1').css({ 'height': 'auto' });
+                    $('.subject').css({ 'display': 'none' });
+
+                    $('.fa-angle-up').css('display', 'block');
+                    $('.fa-angle-down').css('display', 'none');
+                    $('.subject .owl-carousel').trigger('stop.owl.autoplay');
+                }
+            });
+        });
+
+        $('.subject .owl-carousel').owlCarousel({
+            loop: true,
+            autoplayHoverPause: true,
+
+            autoplay: true,
+            autoplayTimeout: 2000,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        });
+        $('.subject .owl-carousel').on('mouseover', function (e) {
+            $('.owl-carousel').trigger('stop.owl.autoplay');
+        })
+        $('.subject .owl-carousel').on('mouseleave', function (e) {
+            $('.owl-carousel').trigger('play.owl.autoplay');
+        })
+        $('.subcmnt .owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 2
+                }
+            }
+        });
+        $('.subcmnt .owl-carousel').on('mouseover', function (e) {
+            $('.owl-carousel').trigger('stop.owl.autoplay');
+        })
+        $('.subcmnt .owl-carousel').on('mouseleave', function (e) {
+            $('.owl-carousel').trigger('play.owl.autoplay');
+        })
+        $('.activity .owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            navText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        });
+        $('.activity .owl-carousel').on('mouseover', function (e) {
+            $('.owl-carousel').trigger('stop.owl.autoplay');
+        })
+        $('.activity .owl-carousel').on('mouseleave', function (e) {
+            $('.owl-carousel').trigger('play.owl.autoplay');
+        })
+        $('.associate .owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            navText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                850: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+        $('.associate .owl-carousel').on('mouseover', function (e) {
+            $('.owl-carousel').trigger('stop.owl.autoplay');
+        })
+        $('.associate .owl-carousel').on('mouseleave', function (e) {
+            $('.owl-carousel').trigger('play.owl.autoplay');
+        })
+        $(document).ready(function () {
+            $("#owl-three").owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                margin: 60,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 2
+                    }
+                }
+            })
+            $('#owl-three .item').on('mouseover', function (e) {
+                $('.owl-carousel').trigger('stop.owl.autoplay');
+            })
+            $('#owl-three .item').on('mouseleave', function (e) {
+                $('.owl-carousel').trigger('play.owl.autoplay');
+            })
+            $('.item').hover(function () {
+
+                $(this).find('.teacherimg .social').css({ 'opacity': '1' });
+
+            },
+                function () {
+
+                    $(this).find('.teacherimg .social').css({ 'opacity': '0' });
+
+                });
+        });
+        const counters = document.querySelectorAll(".count");
+        const speed = 400;
+
+        // The code to start the animation is now wrapped in a function
+        const startCounters = () => {
+            counters.forEach((counter) => {
+                const updateCount = () => {
+                    const target = parseInt(+counter.getAttribute("data-target"));
+                    const count = parseInt(+counter.innerText);
+                    const increment = Math.trunc(target / speed);
+                    if (count < target) {
+                        counter.innerText = count + increment;
+                        setTimeout(updateCount, 1);
+                    } else {
+                        count.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        }
+
+        // On the first scroll in this window, call the function to start the counters
+        window.addEventListener('scroll', startCounters, {
+            once: true
+        });
+
+
+    </script>
+    {% endblock %}

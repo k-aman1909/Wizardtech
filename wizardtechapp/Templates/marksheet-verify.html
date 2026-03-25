@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/verification.css' %}">
+   
+    <!-- ==================main==inner===part=== -->
+    <section class="verify" >
+        <!-- <div class="dhead">
+            <h1>W<span style="color: red;">i</span>zard Tech Computer Academy</h1>
+        </div> -->
+        <div class="subverify">
+            <div class="sideimg" data-aos="fade-right"><img src="{% static 'img/marksheet-cheecklist-image-examiniation.png' %}" alt=""></div>
+            <div class="form" data-aos="fade-left">
+                <h5>Marksheet <span style="color: red;">Verification </span></h5>
+                <h6>Write down the <span style="color: rgb(41, 97, 183);">Registration Number</span> Provided by Institute<span style="color: red;"> !</span></h6>
+                <table>
+                    <tr>
+                        <td><input type="text" placeholder="Enter the Registration Number: 0000111XXXXXXXXX"></td>
+                    </tr>
+                    <tr>
+                        <td><button> <i class="fa-solid fa-check"></i> &nbsp;&nbsp;Verify Now</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+         <!-- ===================Login==popup=================== -->
+   
+    <!-- ===================Login==popup===End================ -->
+    </section>
+    <!-- ===========inner====part====end========== -->
+      <!-- ========================footer====================== -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+      <script>
+          AOS.init({
+              // Global settings:
+              offset: 120, // offset (in px) from the original trigger point
+              delay: 0, // values from 0 to 3000, with step 50ms
+              duration: 400, // values from 0 to 3000, with step 50ms
+              easing: 'ease', // default easing for AOS animations
+              once: true, // whether animation should happen only once - while scrolling down
+              anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+          })
+          var text = $('.typewriter').text();
+      
+          var length = text.length;
+          var timeOut;
+          var character = 0;
+      
+      
+          (function typeWriter() {
+              timeOut = setTimeout(function () {
+                  character++;
+                  var type = text.substring(0, character);
+                  $('.typewriter').text(type);
+                  typeWriter();
+      
+                  if (character == length) {
+                      clearTimeout(timeOut);
+                  }
+      
+              }, 5);
+          }());
+      </script>
+      {% endblock %}
+</body>
+</html>

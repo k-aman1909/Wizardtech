@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>
+            wizard
+        </title>
+        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        {% comment %} <link rel="stylesheet" href="{% static 'owl-carousel.css' %}"> {% endcomment %}
+        <link rel="stylesheet" href="{% static 'css/loginpage.css' %}">
+        <link rel="stylesheet" href="{% static 'css/headerfooterwizard.css' %}">
+       
+       {% block extracss %}
+       {% endblock extracss %}
+        <link rel="stylesheet" href="{% static 'css/slider.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+<body>
+    <header>
+        <div class="headerpart" id="headerpart1">
+            <div><span><i class="fa fa-phone"></i> &nbsp;+91-5252869888</span></div>
+            <div><span><i class="fa fa-envelope"></i> &nbsp;info@505.com</span></div>
+        </div>
+        <div class="headerpart">
+            <div class="student-login"><a href="#"><i class="fa-solid fa-arrows-down-to-people"></i> &nbsp;Student Login</a></div>
+            <div id="center-login"><a href="#"><i class="fa-solid fa-user-lock"></i> &nbsp;Center Login</a></div>
+            <div><a href="#"> <i class="fa-solid fa-computer"></i> &nbsp;Online Exam</a></div>
+        </div>
+
+    </header>
+    <nav>
+        <div class="imglogo"> <img src="{% static 'img/main-logo.png' %}" alt=""></div>
+        <div class="menu">
+            <ul type="none" class="ul1">
+                <li onclick="location.href='wizard.html'"><a href="{% url 'homepage'%}"><i class="fa-solid fa-house"></i></a></li>
+                <li class="service"><a href="#">Service</a>
+                    <div class="content">
+                        <table class="subcontent">
+                            <tr>
+                                <th colspan="2">Course</th>
+
+                            </tr>
+                            <tr>
+                                <td><a href="#">Computer Course</a></td>
+
+                            </tr>
+                            <tr>
+                                <td><a href="#">Communication and Personality Devbelopment(CPD)</a></td>
+
+                            </tr>
+                            <tr>
+                                <td><a href="#">Kids Program</a></td>
+
+                            </tr>
+                            <tr>
+                                <td> <a href="#">Typing Program</a></td>
+
+                            </tr>
+                            <tr>
+                                <td style="visibility: hidden;"></td>
+                            </tr>
+                            <tr>
+                                <td style="visibility: hidden;"></td>
+                            </tr>
+                            <tr>
+                                <td style="visibility: hidden;"></td>
+                            </tr>
+                        </table>
+                        <table class="subcontent">
+                            <tr>
+                                <th colspan="2">Project</th>
+
+                            </tr>
+                            <tr>
+                                <td><a href="#">BSDM Kyp Center</a></td>
+
+                            </tr>
+                            <tr>
+                                <td><a href="#">NIELIT-CCC</a></td>
+
+                            </tr>
+                            <tr>
+                                <td><a href="#">NIELIT-BCC</a></td>
+
+                            </tr>
+                            <tr>
+                                <td> <a href="#">NULM-BIHAR</a></td>
+
+                            </tr>
+                            <tr>
+                                <td> <a href="#">NULM-JHARKHAND</a></td>
+
+                            </tr>
+                            <tr>
+                                <td> <a href="#">NSDC</a></td>
+
+                            </tr>
+                            <tr>
+                                <td> <a href="#">ESDM/TSSC</a></td>
+
+                            </tr>
+                        </table>
+                    </div>
+                </li>
+                <li class="szone"><a href="#">Student Zone</a>
+                    <div class="dropmenu">
+                        <ul>
+                            <li href="{% url 'verification'%}"><a href="{% url 'verification'%}">Admission Verification</a></li>
+                            <li href="{% url 'certificate-verification'%}"><a href="{% url 'certificate-verification'%}">Certificate Verification</a></li>
+                            <li href="{% url 'marksheet-verify'%}"><a  href="{% url 'marksheet-verify'%}">Mark Sheet Verification</a></li>
+                            <li href="{% url 'typing-verify'%}"><a href="{% url 'typing-verify'%}"> Typing Certificate Verification</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">WTCA Zone</a>
+                    <div class="dropmenu">
+                        <ul>
+                            <li><a href="{% url 'certificate'%}">Certificate Sample</a></li>
+                            <li><a href="{% url 'marksheet'%}">Marksheet Sample</a></li>
+                            <li><a href="{% url 'icard'%}">I-Card Sample</a></li>
+                            <li><a href="#">Promotion Material</a></li>
+                            <li><a href="#">Study Material</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Franchisee</a></li>
+                <li><a href="{% url 'aboutus'%}">About Us</a></li>
+                <li><a style="cursor: pointer;">Contact Us</a></li>
+                <li><a href="{% url 'gallery'%}">Gallery</a></li>
+
+            </ul>
+        </div>
+        <button class="bar1"><i class="fa-solid fa-bars bar"></i></button>
+    </nav>
+    <div class="sidediv">
+        <ul type="none" class="ul1">
+            <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+            <li class="service"><a href="#">Service</a>
+                <div class="content">
+                    <table class="subcontent">
+                        <tr>
+                            <th colspan="2">Course</th>
+
+                        </tr>
+                        <tr>
+                            <td><a href="#">Computer Course</a></td>
+
+                        </tr>
+                        <tr>
+                            <td><a href="#">Communication and Personality Devbelopment(CPD)</a></td>
+
+                        </tr>
+                        <tr>
+                            <td><a href="#">Kids Program</a></td>
+
+                        </tr>
+                        <tr>
+                            <td> <a href="#">Typing Program</a></td>
+
+                        </tr>
+
+                    </table>
+                    <table class="subcontent">
+                        <tr>
+                            <th colspan="2">Project</th>
+
+                        </tr>
+                        <tr>
+                            <td><a href="#">BSDM Kyp Center</a></td>
+
+                        </tr>
+                        <tr>
+                            <td><a href="#">NIELIT-CCC</a></td>
+
+                        </tr>
+                        <tr>
+                            <td><a href="#">NIELIT-BCC</a></td>
+
+                        </tr>
+                        <tr>
+                            <td> <a href="#">NULM-BIHAR</a></td>
+
+                        </tr>
+                        <tr>
+                            <td> <a href="#">NULM-JHARKHAND</a></td>
+
+                        </tr>
+                        <tr>
+                            <td> <a href="#">NSDC</a></td>
+
+                        </tr>
+                        <tr>
+                            <td> <a href="#">ESDM/TSSC</a></td>
+
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li class="szone"><a href="#">Student Zone</a>
+                <div class="dropmenu">
+                    <ul type="none">
+                        <li><a href="#">Admission Verification</a></li>
+                        <li><a href="#">Certificate Verification</a></li>
+                        <li><a href="#">Mark Sheet Verification</a></li>
+                        <li><a href="#"> Typing Certificate Verification</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">WTCA Zone</a>
+                <div class="dropmenu">
+                    <ul type="none">
+                        <li><a href="#">Certificate Sample</a></li>
+                        <li><a href="#">Marksheet Sample</a></li>
+                        <li><a href="#">I-Card Sample</a></li>
+                        <li><a href="#">Promotion Material</a></li>
+                        <li><a href="#">Study Material</a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Franchisee</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Gallery</a></li>
+
+        </ul>
+    </div>
+    <!-- ----------------------------------------sidebar--------------------------------- -->
+
+
+    <div class="sticky" data-aos="fade-left">
+
+        <div class="sticky1"><i class="fa-brands fa-whatsapp fa-beat"></i>
+            <div class="stick">
+
+                7700870792
+            </div>
+        </div>
+        <div class="sticky2"><i class="fa-solid fa-street-view fa-beat"></i>
+            <div class="stick2">
+                7A/73,S/F Plot No.3 & 4, Pvt Office 204 Main Road Guru Nanak Pura, Delhi -110092
+            </div>
+        </div>
+        <div class="sticky3"><i class="fa-solid fa-phone fa-beat"></i>
+            <div class="stick3">
+
+                7700870792
+            </div>
+        </div> 
+    </div>
+{% block content %}
+{% endblock content %}
+{% load static %}
+<section class="loginpage">
+    <div class="slogin">
+        <div class="leftside"><img src="{% static 'img/studentloging-removebg-preview.png' %}" alt=""></div>
+        <div class="rightside">
+            <h1>Student Login</h1>
+            <div class="cut"><i class="fa-solid fa-xmark"></i></div>
+            <div class="log-img"><i class="fa-regular fa-user"></i></div>
+            <table>
+                <tr>
+                    <td><label for="">Reg. No</label><input type="text" placeholder="Registration Number"
+                            class="login-input"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password</label><input type="text" placeholder="Password"
+                            class="login-input">></td>
+                </tr>
+                <tr>
+
+                    <td>
+                        <div class="remember"><span><input type="checkbox"> Remember me</span> <span><a href="#"
+                                    style="color: red;">Forget Password ?</a></span></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button><i class="fa-solid fa-arrow-right-to-bracket"></i> &nbsp;LOGIN</button></td>
+                </tr>
+
+            </table>
+            <p>Don't have any account ?</p>
+            <p><a href="#">Create an account</a></p>
+        </div>
+    </div>
+</section>
+<section class="center-login">
+    <div class="slogin">
+        <div class="leftside"><img src="{% static 'img/centerlogin-removebg-preview.png' %}" alt=""></div>
+        <div class="rightside">
+            <h1>Center Login</h1>
+            <div class="cut-center"><i class="fa-solid fa-xmark"></i></div>
+            <div class="log-img"><i class="fa-solid fa-user-lock"></i></div>
+            <table>
+                <tr>
+                    <td><label for="">Username</label><input type="text" placeholder="Username"
+                            class="login-input"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password</label><input type="text" placeholder="Password"
+                            class="login-input">></td>
+                </tr>
+                <tr>
+
+                    <td>
+                        <div class="remember"><span><input type="checkbox"> Remember me</span> <span><a href="#"
+                                    style="color: rgb(37, 18, 142);">Forget Password ?</a></span></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button><i class="fa-solid fa-arrow-right-to-bracket"></i> &nbsp;LOGIN</button></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</section>
+<script>
+    $(function () {
+        $('.student-login').click(function () {
+            $('.loginpage').css({ 'scale': '1' })
+        })
+        $('.cut').click(function () {
+            $('.loginpage').css({ 'scale': '0' })
+        })
+    });
+    $(function () {
+        $('#center-login').click(function () {
+            $('.center-login').css({ 'scale': '1' })
+        })
+        $('.cut-center').click(function () {
+            $('.center-login').css({ 'scale': '0' })
+        })
+    });
+    $(function () {
+        $("nav")
+        .children("div")
+          .children("ul")
+          .children(":nth-child(7)")
+          .children("a")
+          .click(function (e) {
+            window.scroll({
+              top: 5200,
+              left: 0,
+              behavior: "smooth",
+            });
+          });
+      
+       
+      
+        var scrollPosition = sessionStorage.getItem("scrollposition");
+        window.scrollTo(0, scrollPosition);
+        sessionStorage.clear();
+      });
+</script>
+<footer>
+    <div class="footer1">
+        <div class="subfooter">
+            <div class="footerlogo">WIZARD TECH COMPUTER ACADEMY</div>
+            <h5>REGISTERED OFFICE</h5>
+            <div class="logodetail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eaque
+                repellat
+                obcaecati itaque aut asperiores, </div>
+            <div class="mail"><i class="fa-solid fa-envelope"></i> &nbsp;info123@gmail.com</div>
+            <div class="mail"><i class="fa-solid fa-phone"></i> &nbsp;+91-5252869888</div>
+            <div class="mail" style="line-height: 2.5rem;"><i class="fa-solid fa-location-dot"></i>
+                &nbsp;7A/73,S/F
+                Plot No.3 & 4, Pvt Office 204
+                Main Road Guru Nanak Pura, Delhi -110092</div>
+            <div class="follow">Follow Us</div>
+            <div class="icon"><i class="fa-brands fa-square-facebook"></i> <i class="fa-brands fa-instagram"></i> <i
+                    class="fa-brands fa-square-x-twitter"></i></div>
+
+        </div>
+        <div class="subfooter">
+            <div class=" usefull1">USEFULL &nbsp; LINKS</div>
+            <div class="links">
+                <ul>
+                    <li><i class="fa-solid fa-angles-right"></i> The Institute</li>
+                    <li><i class="fa-solid fa-angles-right"></i> Our Team</li>
+                    <li><i class="fa-solid fa-angles-right"></i>The Testimonial</li>
+                    <li><i class="fa-solid fa-angles-right"></i> Term and Services</li>
+                    <li><i class="fa-solid fa-angles-right"></i> Privacy Policy</li>
+                    <li><i class="fa-solid fa-angles-right"></i> Contact</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="subfooter">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.6989422802644!2d85.11724797517802!3d25.614918377444468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58ee6d975d47%3A0xbc5045cc2b8ae11c!2sRays%20Edutech%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1705474680507!5m2!1sen!2sin"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- <iframe src="" frameborder="0" style="border: 2px solid black;"></iframe> -->
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="footer2">Copyright © www.wizard-tech.net | | Developed & Maintained By - Aman Kumar</div>
+</footer>
+</body>
+
+</html>
