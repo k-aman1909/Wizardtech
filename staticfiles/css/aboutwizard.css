@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+.aboutus{
+    margin-top: 10rem;
+    /* border:2px solid red; */
+    /* height: 40rem; */
+}
+.aboutus .mainimg{
+    height: 60rem;
+    position: relative;
+    margin-bottom: 5rem;
+}
+.mainimg img{
+    width: 100%;
+    height: 100%;
+}
+.mainimg .fade {
+    position: absolute;
+    width: 100%;
+   
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+    background-color: rgba(0, 0, 0, 0.687);
+
+    /* flex-wrap: wrap; */
+
+}
+.mainimg .fade .subfade{
+    /* border:  2px solid red; */
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.fade .subfade .sideimg{
+    width: 70%;
+    height: 70%;
+    box-shadow: rgba(194, 192, 192, 0.24) 0px 3px 8px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: .5rem;
+    /* border: 2p   x solid blue; */
+}
+.fade .subfade .sideimg .img{
+    width: 100%;
+    height: 100%;
+}
+.mainimg .fade .subfade h1{
+    width: 80%;
+    /* margin: auto; */
+    margin-top: 5rem;
+    color: white;
+    /* border: 2px solid red; */
+
+    font-size: 4rem;
+}
+.mainimg .fade .subfade p{
+   
+    width: 80%;
+    line-height: 2rem;
+    font-weight: lighter;
+    text-align: justify;
+    font-size: 1.5rem;
+    color: white;
+    margin: auto;
+    margin-top: -5rem;
+
+}
+.dhead{
+    width: 95%;
+    margin: auto;
+    margin-top: 5rem;
+    /* margin-bottom: 5rem; */
+    /* border: 2px solid red; */
+}
+.dhead h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.mission{
+    /* border: 2px solid red; */
+    width: 95%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    &:hover{
+        box-shadow: rgba(48, 39, 178, 0.411) 0px 2px 8px;
+    }
+}
+.mission .smalldiv{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid blue; */
+    height: 30rem;
+}
+.smalldiv .iconimg{
+    width: 60%;
+    height: 80%;
+}
+.iconimg img{
+    width: 100%;
+    height: 100%;
+}
+.smalldiv img{
+    filter: drop-shadow( rgba(22, 20, 153, 0.42) 5px 2.4px 3.2px);
+}
+.mission .bigdiv{
+    padding: 5rem;
+    /* border: 2px solid purple; */
+    width: 50%;
+}
+.bigdiv p{
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    text-align: justify;
+    line-height: 2rem;
+    color: rgb(43, 90, 129);
+}
+.bigdiv ul li{
+    color: rgb(43, 90, 129);
+    line-height: 2.5rem;
+    text-align: justify;
+    font-size: 1.5rem;
+
+}
+.certified{
+    /* border: 2px solid red; */
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.certified .ceritificate{
+    width: 45%;
+    height: 60rem;
+    /* border: 2px solid blue; */
+}
+.certified .ceritificate img{
+    width: 100%;
+    height: 100%;
+    &:hover{
+        scale: 1.03;
+        transition: .5s;
+    }
+}
+.vision{
+    /* border: 2px solid red; */
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.vision .subvision{
+    position: relative;
+    display: flex;
+    margin-top: 8rem;
+    box-shadow: rgba(72, 55, 169, 0.507) 0px 3px 8px;
+    border-radius: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 45%;
+    min-width: 30rem;
+}
+.subvision .iconimg{
+    position: absolute;
+    width: 12rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    padding: 2rem;
+    top: -7rem;
+    background-color: white;
+    height: 12rem;
+}
+.subvision h1{
+    width: 100%;
+    text-align: center;
+    margin-top: 8rem;
+    font-size: 2rem;
+    /* border: 2px solid red; */
+}
+.subvision p{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: rgb(16, 16, 119);
+    padding: 5rem;
+    padding-top: 0rem;
+    text-align: justify;
+}
+.iconimg img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .mainimg .fade .subfade{
+        width: 80%;
+    }
+    .vision{
+        width: 100%;
+        flex-wrap: wrap;
+    
+    }
+    .vision .subvision{
+        width: 90%;
+        margin: 8rem auto 2rem;
+    }
+    .mission{
+        
+        flex-wrap: wrap;
+    }
+    .mission .smalldiv{
+        width: 100%;
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+    .mission .bigdiv{
+        width: 100%;
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+    .certified{
+        flex-wrap: wrap;
+        row-gap: 5rem;
+    }
+    .certified .ceritificate{
+        width: 90%;
+        max-width: 40rem;
+        margin: 2rem auto;
+    }
+}

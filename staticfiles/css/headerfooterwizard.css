@@ -1,0 +1,639 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+header {
+    /* border: 2px solid black; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(21, 9, 66);
+}
+
+header .headerpart {
+
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+header .headerpart div {
+    display: grid;
+    /* padding: 1rem; */
+    padding-left: 2rem;
+    padding-right: 5rem;
+
+    align-items: center;
+    /* justify-content: center; */
+    width: auto;
+    font-size: 1.5rem;
+    height: 100%;
+    color: white;
+    /* border: 2px solid white; */
+}
+
+header .headerpart div span {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+header .headerpart div a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+nav {
+    position: fixed;
+    top: 4rem;
+    z-index: 999;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+nav .imglogo {
+
+    width: 10rem;
+    height: 100%;
+}
+
+.imglogo img {
+    width: 100%;
+    height: 95%;
+}
+
+nav .menu {
+
+    width: 80%;
+    display: flex;
+    height: 100%;
+}
+
+nav .menu ul {
+    display: flex;
+
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+nav .menu ul li {
+
+    font-size: 1.8rem;
+    /* border: 2px solid red; */
+    height: 100%;
+    color: rgb(17, 17, 108);
+    /* font-weight: bold; */
+    display: grid;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.bar1 {
+    height: 100%;
+    background: none;
+    border: none;
+    width: 5rem;
+    font-size: 2rem;
+    display: none;
+
+    /* border: 2px solid red; */
+}
+
+.bar1 i {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.sticky {
+    position: fixed;
+    /* border: 1px  solid red; */
+    right: 0;
+    bottom: 20%;
+    width: 5rem;
+    height: 35%;
+    z-index: 5;
+}
+
+.sticky1,
+.sticky2,
+.sticky3 {
+    background-color: rgb(24, 28, 108);
+
+    color: white;
+    font-size: 2rem;
+    /* height: 4rem; */
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    /* opacity: 0.5; */
+}
+
+.sticky1 {
+    opacity: .8;
+
+    position: relative;
+}
+
+.stick,
+.stick2,
+.stick3 {
+    position: absolute;
+    right: 5rem;
+    top: 0rem;
+    height: auto;
+    color: blue;
+    font-size: 1.5rem;
+    width: 12rem;
+    /* opacity: 1; */
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0% 16% 16% 0% / 0% 50% 49% 0%;
+    background-color: white;
+    /* visibility: hidden; */
+    scale: 0;
+    transition: 0.5s;
+}
+
+.sticky1:hover {
+    opacity: 1;
+}
+
+.sticky1:hover .stick {
+    scale: 1;
+}
+
+.sticky2 {
+    opacity: 0.8;
+    position: relative;
+}
+
+.sticky2:hover {
+    opacity: 1;
+}
+
+.sticky2:hover .stick2 {
+    scale: 1;
+}
+
+.sticky3 {
+    opacity: 0.8;
+    position: relative;
+}
+
+.sticky3:hover {
+    opacity: 1;
+}
+
+.sticky3:hover .stick3 {
+    scale: 1;
+}
+
+.content {
+    position: absolute;
+    top: 8rem;
+    left: -5rem;
+    /* border: 2px solid rgb(0, 0, 0); */
+    width: 40rem;
+    /* height: 0rem; */
+    display: flex;
+    gap: .5rem;
+    z-index: 1111;
+    background-color: aliceblue;
+    /* transition: 1s; */
+    
+
+}
+
+.content table {
+    /* border: 1px solid rgb(0, 0, 0); */
+
+    border-collapse: collapse;
+    /* box-shadow: inset rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    width: 50%;
+}
+
+.content table th,
+td {
+    /* border: 2px solid red; */
+    font-size: 0rem;
+    border-collapse: collapse;
+}
+
+.content table td:hover {
+    background-color: rgb(180, 205, 227);
+    cursor: pointer;
+
+}
+
+
+
+
+
+.content table td a {
+    color: blue;
+}
+
+.service:hover .content {
+    height: 30rem;
+
+}
+
+.service:hover td{
+    font-size: 1.3rem;
+    height: 4rem;
+    /* transition: .5s; */
+}
+
+.service:hover th {
+    font-size: 1.5rem;
+}
+
+.dropmenu {
+    display: none;
+    /* width: 10rem; */
+    position: absolute;
+    left: -10rem;
+    height: 0;
+    top: 100%;
+
+    background-color: aliceblue;
+    transition: 2rem;
+    transition-duration: .5s;
+
+}
+
+.dropmenu ul {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+
+    /* margin: 10px; */
+
+}
+
+.dropmenu ul li {
+    width: 30rem;
+    /* display: block; */
+
+    /* border-bottom: .1rem solid blue; */
+    padding: 1rem;
+}
+
+.dropmenu ul li:hover {
+    background-color: rgb(123, 160, 193);
+
+
+}
+
+.dropmenu ul li a {
+    color: blue;
+    font-size: 1.5rem;
+}
+
+.menu ul li:hover .dropmenu {
+    display: block;
+
+    height: auto;
+
+
+}
+
+.sidediv {
+    position: fixed;
+    z-index: 99999;
+    top: 12rem;
+    width: 80%;
+    max-width: 30rem;
+    border-radius: 0 0 .8rem 0;
+    left: -100%;
+    background-color: #f1f7f8;
+    transition: .3s;
+    padding: 2rem 0;
+}
+/* =================footer============ */
+footer {
+    width: 100%;
+    /* border: 2px solid rgb(0, 195, 255); */
+    background-color: #072541;
+    display: flex;
+    padding-top: 2rem;
+    /* height: 60rem; */
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+
+.footer1 {
+    width: 95%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: auto;
+    justify-content: space-between;
+    height: 100%;
+    /* border: 2px solid red; */
+
+}
+
+footer .footer2 {
+    /* border: 2px so   lid red; */
+    width: 100%;
+
+    font-size: 2rem;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 2rem;
+}
+
+
+.footer1 .subfooter {
+    width: 40rem;
+    height: 100%;
+    /* border: 2px solid    red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subfooter h5 {
+    width: 100%;
+    font-size: 1.8rem;
+    color: #cbd5ff;
+    text-align: center;
+}
+
+.footer1 .subfooter .footerlogo {
+    /* border: 2px solid blue; */
+    /* background-color: white; */
+    font-size: 1.8rem;
+    /* padding: 1rem; */
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #5272F2;
+    width: 100%;
+    /* height: 10rem; */
+}
+
+.footer1 .subfooter .logodetail {
+    /* border: 2px solid red; */
+    padding: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: .2rem;
+    font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: justify;
+}
+
+.footer1 .subfooter .mail {
+    padding: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: .5px solid #5272F2;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+
+.footer1 .subfooter .mail i {
+    color: #5272F2;
+}
+
+.follow {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 1rem;
+    padding-top: 3rem;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.icon {
+    font-size: 3rem;
+    width: 100%;
+    padding-top: 3rem;
+    display: flex;
+    border-bottom: .5px solid #5272F2;
+    padding-bottom: 1rem;
+    justify-content: space-around;
+    color: #5272F2;
+    /* cursor: pointer; */
+}
+
+.footer-links {
+    margin-top: 2rem;
+    width: 95%;
+    /* border: 2px solid red; */
+}
+
+.usefull1 {
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+    text-align: center;
+    /* border: 2px solid red; */
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.links {
+    /* border: 2px solid blue; */
+    width: 100%;
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+.links ul {
+    list-style: none;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    padding-left: 13rem;
+}
+
+.links ul li {
+    padding-top: 2rem;
+    cursor: pointer;
+    /* border: 2px solid red; */
+    /* text-align: center; */
+    /* padding-left: 13rem; */
+}
+
+.links ul li i {
+    font-size: 1.5rem;
+    color: #5272F2;
+}
+
+.subfooter iframe {
+    height: 45rem;
+    border-radius: .3rem;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1077px) {
+    .links ul {
+
+        padding-left: 8rem;
+    }
+}
+
+@media screen and (max-width: 998px) {
+
+    /* *{
+        border: 2px solid red;
+    } */
+    html {
+        font-size: 55%;
+    }
+    #headerpart1{
+        display: none;
+    }
+    header .headerpart{
+        width: 100%;
+        /* border: 2px solid red; */
+        justify-content: space-between;
+    }
+    .footer1 .subfooter {
+        width: 40rem;
+        margin-bottom: 2rem;
+        /* row-gap: 2rem; */
+    }
+
+    .usefull1 {
+        text-align: center;
+    }
+
+
+    .testimonial-span-text p {
+        font-size: 1.5rem;
+    }
+
+
+
+    .links ul {
+        padding-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    html {
+        font-size: 35%;
+    }
+
+
+    .headerpart {
+        width: auto;
+
+        /* border: 2px solid red; */
+    }
+
+    .imglogo {
+        margin-left: 2rem;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+
+    nav .menu {
+        display: none;
+    }
+
+    .bar1 {
+        display: block;
+        padding: 0 1rem;
+    }
+
+    .sidediv ul li {
+        font-size: 1.6rem;
+        padding: 1.5rem 2rem;
+    }
+
+    .dropmenu {
+        position: static;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .footer1 {
+        flex-wrap: wrap;
+    }
+
+    .footer1 .subfooter {
+        width: 60rem;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .links ul li {
+        padding-left: 23rem;
+    }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 25%;
+    }
+
+
+
+
+    .footer1 .subfooter {
+        width: 50rem;
+    }
+
+
+
+
+    .links ul li {
+        padding-left: 3rem;
+        /* border: 2px solid red; */
+        /* width: 0%; */
+        display: flex;
+        /* justify-content: initial; */
+        font-size: 2rem;
+        letter-spacing: .2rem;
+    }
+
+
+
+}
