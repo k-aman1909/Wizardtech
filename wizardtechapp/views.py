@@ -2,7 +2,7 @@ from django.shortcuts import render,HttpResponse
 from django.template import loader
 
 def homepage(request):
-    return render(request, 'wizardtechapp/wizard.html')
+    return render(request,'wizard.html')
 def verification(request):
     return render(request,'verificationform.html')
 def certificate(request):
